@@ -1,30 +1,82 @@
-body {
-    font-family: 'Gothic A1', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background: url('images/ghost-background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
     cursor: url('images/ghost-cursor.png'), auto;
 }
 
-header, nav, main, footer {
+container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+header {
     text-align: center;
-    padding: 1em;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #5D5C61;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+main {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ghost-img {
+    max-width: 100px;
+    margin: 20px;
+    opacity: 0.9;
+}
+
+.social-icon {
+    width: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
 #factButton {
@@ -34,42 +86,17 @@ nav ul li a {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 #factButton:hover {
     background-color: #557A95;
 }
 
-.button-ghost {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #fff;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    transition: all 0.3s ease;
-}
-
-.button-ghost:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
 footer {
-    margin-top: 20px;
-    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
+    margin-top: 20px;
 }
-
-.social-icon {
-    width: 50px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-}
-
-.ghost-img {
-    max-width: 200px;
-    opacity: 0.8;
-}
-
