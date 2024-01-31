@@ -1,37 +1,47 @@
-/* styles.css */
-
-/* Basic styles for the header */
-header {
-    text-align: center;
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px;
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Navigation styles */
+header, nav, main, footer {
+    text-align: center;
+    padding: 1em;
+}
+
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px;
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #5D5C61;
+}
+
+#factButton {
+    background-color: #7393B3;
     color: #fff;
-    margin: 0 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Section styles */
-section {
-    margin: 40px;
+#factButton:hover {
+    background-color: #557A95;
 }
 
-/* Footer styles */
 footer {
-    text-align: center;
-    padding: 10px;
+    margin-top: 20px;
     background-color: #333;
     color: #fff;
 }
+
