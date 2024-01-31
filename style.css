@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    cursor: url('images/ghost-cursor.png'), auto;
 }
 
 header, nav, main, footer {
@@ -39,9 +40,36 @@ nav ul li a {
     background-color: #557A95;
 }
 
+.button-ghost {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.button-ghost:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 footer {
     margin-top: 20px;
     background-color: #333;
     color: #fff;
+}
+
+.social-icon {
+    width: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.ghost-img {
+    max-width: 200px;
+    opacity: 0.8;
 }
 
